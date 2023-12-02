@@ -1,0 +1,342 @@
+
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar{
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    flex-direction: column;
+    width: 80px;
+    height: 240px;
+    border-radius: 10px;
+    border: 2px solid gray;
+}
+
+
+.item_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item_content{
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    transition: background-color 0.25s ease-out 0s;
+    cursor: pointer;
+}
+
+.icon_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+.icon_img{
+    width: 30px;
+    height: 30px;
+}
+
+.icon_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+}
+
+.img_path{
+    fill: white;
+}
+
+#navline{
+    position: fixed;
+    left: 17px;
+    top: 100px;
+    height: 80px;
+    width: 6px;
+    transition: top 0.25s ease-out 0s;
+}
+
+#navline_path{
+    stroke: rgb(0, 144, 240);
+    stroke-width: 8;
+    stroke-linecap: round;
+}
+
+.form_content{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 100px;
+    width: 0px;
+    height: 100vh;
+    display: none;
+}
+
+.staff_content{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 100px;
+    width: 0px;
+    height: 100vh;
+    display: none;
+}
+
+.status_content{
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    left: 100px;
+    width: 0px;
+    height: 100vh;
+    display: none;
+}
+
+
+/*LOGIN*/
+.main_login_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.login_title_box{
+    position: relative;
+    top: 100px;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+
+.login_detail{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.login_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.login_input_box{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    outline-width: 0px;
+    color: gray;
+    border: 4px solid rgb(2, 103, 106);
+    font-size: 16px;
+    transition: width 0.25s ease-out 0s;
+    padding-left: 10px;
+}
+
+.login_input_box:focus{
+    width: 320px;
+}
+
+.login_submit_box{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: black;
+    border-radius: 10px;
+    position: relative;
+    left: calc(50% - 150px);
+    cursor: pointer;
+    transition: background-color 0.25s ease-out 0s;
+}
+
+.login_submit_box:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#submit_btn{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/*FORM*/
+.form_title{
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.form_detail_box{
+    position: relative;
+    left: 50px;
+    height: 100px;
+    width: 400px;
+}
+
+.form_detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form_input{
+    outline-width: 0px;
+    border-radius: 8px;
+    height: 30px;
+    width: 300px;
+    border: 3px solid rgb(0, 137, 175);
+    font-size: 14px;
+}
+
+#proof{
+    border: 0px;
+}
+
+#form_text_area{
+    border: 3px solid rgb(0, 137, 175);
+    border-radius: 10px;
+}
+
+.btn_box{
+    position: relative;
+    top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_btn{
+    margin: 0px 10px;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    outline-width: 0px;
+    border-radius: 10px;
+}
+
+
+/*STATUS*/
+.status_title{
+    font-size: 50px;
+    font-weight: bold;
+    height: 200px;
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.student_detail{
+    display: flex;
+    position: relative;
+    border: 2px solid gray;
+    background-color: black;
+    border-radius: 10px;
+    height: 150px;
+    margin: 10px 10px;
+}
+
+.student_detail_box{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+
+.name_year{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.status_email{
+    position: relative;
+    top: -15px;
+    left: 20px;
+    color: rgb(230, 230, 230);
+}
+
+.status_why{
+    position: relative;
+    left: 20px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+}
+
+.status_button_box{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.status_btn{
+    margin: 10px 0px;
+    background-color: white;
+    border: 0px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@keyframes fade_in_ani {
+    0%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
